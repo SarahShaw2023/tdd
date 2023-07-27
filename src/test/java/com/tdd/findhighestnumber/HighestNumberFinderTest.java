@@ -18,7 +18,7 @@ public class HighestNumberFinderTest {
         int actualResult = f.findHighestNumber(ary);
 
         //assert
-        assertEquals(actualResult, expectedResult);
+        assertEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -33,7 +33,22 @@ public class HighestNumberFinderTest {
         int actualResult = f.findHighestNumber(ary);
 
         //assert
-        assertEquals(actualResult, expectedResult);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void secondItemInDoubleAryIsHighest () {
+        //arrange
+        int ary[] = {7, 13};
+        HighestNumberFinder f = new HighestNumberFinder();
+
+        int expectedResult = 13;
+
+        //act
+        int actualResult = f.findHighestNumber(ary);
+
+        //assert
+        assertEquals(expectedResult, actualResult);
     }
 
 }
